@@ -6,7 +6,7 @@ API_URL = "https://openlibrary.org/search.json?q=python"
 response = requests.get(API_URL)
 data = response.json()
 
-books = data["docs"]   # Correct list
+books = data["docs"]   
 
 # Database
 conn = sqlite3.connect("books.db")
